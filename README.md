@@ -26,7 +26,7 @@ Environment Variables
 Create `.env` in project root:
 ```
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/synergiaDB
+MONGO_URI="mongodb+srv://<username>:<password>@<cluster-name>.mdcbkm3.mongodb.net/<db_name>"
 ```
 Note: `.env` is gitignored. For GitHub submission without credentials, keep `.env.example` committed.
 
