@@ -1,0 +1,52 @@
+Assignment 2
+
+Extend your previous Node.js & Express Synergia Event Booking API by connecting it to MongoDB instead of using an in-memory array and implement CRUD APIs with querying features.
+
+
+Objectives:
+
+Connect Node.js and Express API to MongoDB
+Perform CRUD operations on MongoDB
+
+Implement filtering and search queries
+
+Follow REST API standards
+
+Requirements:
+
+Initialize MongoDB connection using Mongoose / mongodb client
+
+Create a Booking model with schema fields:
+
+{
+  name: String,
+  email: String,
+  event: String,
+  ticketType: String,
+  createdAt: { type: Date, default: Date.now }
+}
+
+
+All data must now be stored in MongoDB instead of an array.
+
+Validate required fields: name, email, event.
+
+Use proper status codes for responses.
+
+No	HTTP Method	Endpoint	Description
+1	GET	/api/bookings	Get all bookings
+2	POST	/api/bookings	Create a new booking
+3	GET	/api/bookings/:id	Get booking by ID
+4	PUT	/api/bookings/:id	Update participant details
+5	DELETE	/api/bookings/:id	Delete/cancel booking
+6	GET	/api/bookings/search?email=xyz	Search booking by email
+7	GET	/api/bookings/filter?event=Synergia
+
+
+Submission Instructions
+
+Push complete project to GitHub
+
+Include .env for MongoDB URL (do not upload credentials)
+
+Include README with setup steps
